@@ -20,15 +20,30 @@ html,body{
 background-color: aqua;
 grid-column: 1/3;
 grid-row: 1;
-padding: 20px;
-display: grid;
-grid-template-columns: repeat(4, auto); /* Creates 4 columns for the 4 h5 elements */
+padding: 20px 0px 0px 20%;
+display: flex;
+gap:30px;
 }
 #left-center{
-    background-color: rgb(3, 3, 1);
+    background-color: rgb(127, 127, 127);
     grid-column: 2;
     grid-row: 2;
+    padding: 20px 0 0 20px;
+    
 }
+#left-center h1{
+    font-size: 6vw;
+    line-height: 6vw;
+    text-transform: uppercase;
+}
+#left-center h5{
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.3vw;;
+}
+
+
 #left-edge{
     background-color: rgb(12, 137, 0);
     grid-column: 1;
@@ -43,7 +58,18 @@ grid-template-columns: repeat(4, auto); /* Creates 4 columns for the 4 h5 elemen
     background-color: rgb(146, 139, 0);
     grid-column: 3/4;
     grid-row: 1;
+    display: flex;
+    gap: 30px;
+    padding: 20px 40px 0px 20%;
+    justify-content: right;
 }
+#right-top i{
+    margin-left: 50px;
+    padding: 0px;
+    
+}
+
+
 #right-bottom{
     background-color: rgb(52, 1, 255);
     grid-column: 3/4;
@@ -58,6 +84,5 @@ grid-template-columns: repeat(4, auto); /* Creates 4 columns for the 4 h5 elemen
 
 
 #left-top h5{
-    margin: 0px;
-    padding: 0px;
+margin:0;
 }
