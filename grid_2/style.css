@@ -3,10 +3,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat';
+
 }
 html,body{
     width: 100%;
     height: 100%;
+    /* background-color: rgb(255, 128, 128);
+     */
+    background-image: url("file/forest.jpg");
+    background-position: center;
+    color: white    ;
+    background-repeat: no-repeat;
 }
 #main{
     height: 100%;
@@ -17,7 +24,7 @@ html,body{
 }
 
 #left-top{
-background-color: aqua;
+/* background-color: aqua; */
 grid-column: 1/3;
 grid-row: 1;
 padding: 20px 0px 0px 20%;
@@ -25,7 +32,7 @@ display: flex;
 gap:30px;
 }
 #left-center{
-    background-color: rgb(127, 127, 127);
+    /* background-color: rgb(127, 127, 127); */
     grid-column: 2;
     grid-row: 2;
     padding: 20px 0 0 20px;
@@ -45,17 +52,22 @@ gap:30px;
 
 
 #left-edge{
-    background-color: rgb(12, 137, 0);
+    /* background-color: rgb(12, 137, 0); */
     grid-column: 1;
     grid-row: 2/4;
 }
 #left-bottom{
-    background-color: rgb(159, 42, 0);
+    /* background-color: rgb(159, 42, 0); */
     grid-column: 2;
     grid-row: 3;
+    padding: 20px 0 0 20px;
+    /* justify-content: left; */
 }
+
+
+
 #right-top{
-    background-color: rgb(146, 139, 0);
+    /* background-color: rgb(146, 139, 0); */
     grid-column: 3/4;
     grid-row: 1;
     display: flex;
@@ -71,7 +83,7 @@ gap:30px;
 
 
 #right-bottom{
-    background-color: rgb(52, 1, 255);
+    background-color: rgb(76, 39, 39);
     grid-column: 3/4;
     grid-row: 2/4;
 }
@@ -85,4 +97,46 @@ gap:30px;
 
 #left-top h5{
 margin:0;
+}
+
+#right-bottom{
+    /* background-color: black; */
+    border-radius: 5% 0 0;
+    margin-left: 20%;
+    padding: 40px 40px 0px 20%;
+}
+#right-bottom h6{
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+#right-bottom #second-line{
+    margin-bottom: 30px;
+}
+#right-bottom #second-line :nth-child(2){
+    font-weight: 400;
+}
+
+#right-bottom #third-line{
+    margin-bottom: 30px;
+}
+#right-bottom #third-line :nth-child(2){
+    font-weight: 400;
+}
+
+#right-bottom #forth-line{
+    margin-top: 30px;
+}
+#right-bottom #forth-line :nth-child(2){
+    font-weight: 400;
+}
+video{
+    width: 70%;
+    height: 30%;
+    object-fit: cover;
+     border-radius: 10px;
+}
+
+#rotate{
+    rotate: 270deg;
+    margin-top: 240%;
 }
